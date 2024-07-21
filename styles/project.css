@@ -1,0 +1,838 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  padding-bottom: 5%;
+  overflow-x: hidden;
+}
+.experience-section-title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+.info {
+  line-height: 1.3em;
+}
+.info h3:first-child {
+  font-size: 1em;
+}
+.info ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 8%;
+  flex-direction: column;
+}
+.info li {
+  width: max-content;
+}
+/* .info > .college-first-ul > li:first-child {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+} */
+
+.college-second-ul{
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.info > .timeline-date {
+  text-align: center;
+  border-bottom: orangered 2px solid;
+  margin-bottom: 3%;
+  line-height: 3em;
+}
+
+.research-section-title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+/* .academics-papers>h3:first-child{
+  font-size: 3em;
+} */
+.academics-papers > h3 {
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.academics-papers button {
+  background: black;
+  padding: 10px;
+  margin-top: 6px;
+  align-items: center;
+  color: orangered;
+  border-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.academics-papers > button:hover {
+  opacity: 0.7;
+}
+.button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-me h3 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+.certifications{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.certification-list{
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align: justify;
+}
+
+.certificate-images {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.certificate-left,
+.certificate-right {
+  flex-basis: 50%;
+}
+
+.certificate-left img,
+.certificate-right img {
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+}
+.certification-name{
+  color: orangered;
+  font-weight: bold;
+}
+.certifications-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.certifications-title h3 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+.projects-title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+/* Modification Needed */
+:root {
+  --primary-color: #212121;
+  --background-color: #111;
+  --font: sans-serif;
+}
+
+/*
+
+/* Timeline Container */
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.card-timeline {
+  position: relative;
+  max-width: 450px;
+  z-index: 9;
+  overflow: hidden;
+}
+.text-wrapper {
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* setting padding based on even or odd */
+.card-timeline:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card-timeline:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card-timeline::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.card-timeline:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card-timeline:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card-timeline:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card-timeline:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card-timeline:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Title of the card */
+.title {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+/* text right if the card is even  */
+.card-timeline:nth-child(even) > .info > .title {
+  text-align: center;
+}
+.info > .title h3 {
+  size: 1em;
+  float: center;
+}
+/* setting dot to the left if the card is odd */
+.card-timeline:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card-timeline:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
+.research-card {
+  position: relative;
+  max-width: 400px;
+  flex: 1;
+  margin: 5%;
+  height: 350px;
+  margin: 5%;
+  background: #333;
+}
+.research-title {
+  text-align: center;
+  border-bottom: orangered 2px solid;
+  padding-top: 20px;
+  margin-bottom: 5%;
+  height: 80px;
+}
+.papers-cards {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  column-gap: 5%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.research-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2%;
+  justify-content: space-evenly;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.research-info p {
+  height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .papers-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    justify-content: center;
+  }
+  .research-card {
+    margin-top: 5%;
+  }
+  .intro-upper-part > .word {
+    height: 10vh;
+    margin: auto;
+    color: orangered;
+    font: 700 normal 1em "tahoma";
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
+  .intro-upper-part .name {
+    font-size: 3em;
+    color: whitesmoke;
+  }
+}
+
+.orange-line {
+  color: orangered;
+  width: 5px;
+}
+.orange-line h3 {
+  color: white;
+}
+
+.footer > h4 {
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.social-handles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 999;
+}
+.social-handles a {
+  text-align: center;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background: black;
+  margin-right: 7px; /*space between*/
+}
+.social-handles a i {
+  font-size: 30px;
+  line-height: 50px;
+}
+.social-handles a:nth-child(2) i {
+  color: gray;
+}
+
+.social-handles a:nth-child(1) i {
+  color: #205fe6;
+}
+.social-handles a:last-child i {
+  color: orangered;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+
+/* .fa-linkedin {
+  background: #3b5998;
+  color: white;
+} */
+
+/* Navbar Section*/
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  height: 100px;
+  z-index: 9999;
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.content {
+  padding-top: 60px;
+}
+
+.navbar span {
+  color: orangered;
+}
+
+/* Intro section */
+.intro {
+  margin-top: 20vh;
+  height: 85vh;
+  color: white;
+  margin-left: 10%;
+}
+.intro-upper-part {
+  margin-top: 10%;
+  margin-top: 10%;
+}
+.intro-upper-part .name-is {
+  color: orangered;
+  margin-bottom: 5%;
+}
+
+.intro-upper-part .name {
+  font-size: 4em;
+  color: whitesmoke;
+}
+
+.word {
+  height: 10vh;
+  margin: auto;
+  color: orangered;
+  font: 700 normal 1.5em "tahoma";
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+.intro p {
+  margin-right: 30%;
+  text-align: justify;
+}
+
+.intro > .resume-button {
+  margin-top: 10vh;
+  padding: 10px;
+  background: black;
+  position: absolute;
+  color: orangered;
+  border-color: orangered;
+}
+.card-timeline button {
+  margin-left: 5px;
+  padding: 5px;
+  background: black;
+  color: orangered;
+  border-color: orangered;
+}
+
+.intro > .intro-information {
+  position: inherit;
+}
+.intro-information p {
+  text-align: justify;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* About me section */
+
+.about-me {
+  margin-bottom: 50px;
+}
+.about-me-sections {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-me-sections > .intro-information {
+  color: white;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.technology-used {
+  margin-top: 5%;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.technology-image {
+  width: 20px;
+  height: 20px;
+}
+
+.name-and-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+/* More projects */
+.more-projects-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.less-projects-div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.more-projects-button,
+.less-projects-button {
+  background: black;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  color: orangered;
+  border-color: orangered;
+}
+.more-projects-button:hover {
+  opacity: 0.7;
+}
+
+.more-projects-view-code-button {
+  background: black;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10px;
+  color: orangered;
+  bottom: 5px;
+  left: 40%;
+  border-color: orangered;
+  bottom: 5px;
+}
+.more-project-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* More porjects-cards */
+.more-projects-view-code-button {
+  opacity: 0.7;
+}
+main {
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  padding: 60px 0;
+  display: none;
+}
+.more-projects-title {
+  border-bottom: 2px orangered solid;
+  height: max-content;
+  margin-bottom: 5%;
+}
+.highlights-more-projects {
+  margin-bottom: 12%;
+}
+.highlights-more-projects > ul {
+  margin: 10px 0px 10px 0px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+}
+
+.highlights-more-projects li::before {
+  content: "• ";
+  color: red;
+}
+.more-projects-title > p {
+  font-size: 1.2em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.text--medium {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ecf0f1;
+}
+
+.cards {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
+}
+
+.card {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card__image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__image-container img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__content {
+  padding: 20px;
+}
+
+.card__title {
+  margin-bottom: 20px;
+}
+
+.card__info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+.card__price {
+  margin-left: auto;
+  padding: 5px 20px;
+  background-color: #303032;
+  border-radius: 20px;
+}
+.hamburger {
+  display: none;
+}
+
+.mobile-menus {
+  margin-top: 70px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1%;
+}
+.mobile-menus a {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+  .hamburger {
+    color: white;
+    display: block;
+  }
+  .hamburger > a {
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    padding-top: 30px;
+    text-decoration: none;
+  }
+  .mobile-menus {
+    width: 100%; /* Full width */
+    height: 100px;
+    z-index: 9999;
+  }
+  .mobile-menus span {
+    color: orangered;
+  }
+  .mobile-menus a {
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+  }
+  .technical-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+  .about-me{
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .certificate-images{
+    display: flex;
+    row-gap: 50px;
+    margin-left:10%;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+  }
+}
+
+.static-site-info {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.7em;
+}
+
+.orange-line-title {
+  width: 10%;
+  height: 4px;
+  background-color: orangered;
+}
+
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.technical-highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 35%;
+  margin: 5%;
+}
+
+.technical-highlights-left > ul {
+  margin: 10px 0px 10px 0px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+}
+.technical-highlights-left li::before {
+  content: "• ";
+  color: red;
+}
+
+.technical-highlights-right > ul {
+  margin: 10px 0px 10px 0px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+}
+.technical-highlights-right li::before {
+  content: "• ";
+  color: red;
+}

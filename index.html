@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/authenticate.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <title>Prakash Parajuli</title>
+  </head>
+  <body>
+    <!-- scanning display -->
+    <!-- Just for demo -->
+    <div class="scan" id="scanning-page">
+      <div class="fingerprint"></div>
+      <h3 id="authenticated">Scanning...</h3>
+    </div>
+    <!-- Main Content-->
+    <div class="main" style="display: none" id="main">
+      <div class="navbar" id="navbar">
+        <a style="float: left;">Prakash Parajuli</a>
+        <a href="#project-section"><span>05.</span> Projects</a>
+        <a href="#research-section"><span>04.</span> Research</a>
+        <a href="#experiences-section"><span>03.</span>Experiences</a>
+        <a href="#certifications-section"><span>02.</span>Certifications</a>
+        <a href="#about-me-section"><span>01. </span>Technical Highlights</a>
+      </div>
+      <div class="hamburger" id="hamburger-button" onclick="handleHamburgerClick()">
+        <a>  
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="mobile-menus" id="mobile-menus">
+        <a href="#about-me-section"><span>01. </span>Technical Highlights</a>
+        <a href="#certifications-section"><span>02. </span>Certifications</a>
+        <a href="#experience-section"><span>03.</span>Experiences</a>
+        <a href="#research-section"><span>04.</span> Research</a>
+        <a href="#project-section-mobile"><span>05.</span> Projects</a>
+      </div>
+      <div class="intro">
+        <div class="intro-upper-part">
+        <p class="name-is">&nbsp;Hi my name is </p>
+        <p class="name">Prakash Parajuli</p>
+        <p class="word"></p>
+        </div>
+      <p class="intro-information">Welcome to my world of software engineering! I'm a passionate problem-solver and code enthusiast on a mission to craft elegant solutions that make a meaningful impact. With a Master's degree in Computer Science and a diverse skill set spanning languages like Python, Java, and JavaScript, I thrive in the dynamic realm of web and application development. From architecting microservices to constructing robust REST APIs, I love diving into the complexities of modern technology stacks. With each line of code, I strive to create experiences that not only empower users but also ignite their imaginations. Let's embark on an exciting journey together and turn ideas into reality!</p>
+      <button class="resume-button" onclick="window.open('./media/downloads/Prakash_Parajuli_Resume.pdf', '_blank')">View My Resume</button>
+      </div>
+      <div class="about-me" id="about-me-section">
+        <div class="about-me-title">
+        <div class="orange-line-title"></div>
+        <h3>TECHNICAL HIGHLIGHTS</h3>
+        <div class="orange-line-title"></div>
+      </div>
+      <!-- Technical Highlights  -->
+  <div class="about-me-sections">
+    <div class="intro-information">
+      <p>
+        Welcome to the Technological Highlights section of my portfolio, where I present a collection of my key technical skills and expertise. With a strong foundation in cutting-edge technologies and frameworks, I bring a versatile skill set to develop robust and scalable web applications. From back-end development using Spring Boot (Java), Django, Flask (Python), and Node.js (JavaScript), to front-end mastery with React and Angular, I consistently deliver captivating user experiences. My technical highlights include:
+
+These technical highlights reflect my deep understanding and proficiency in the latest tools and technologies, enabling me to deliver exceptional software solutions. I invite you to explore further and witness the value I bring to software engineering projects. 
+        <div class="technical-highlights">
+          <ul>
+          <li><span>Web Frameworks:</span> Highly skilled in Spring Boot (Java), Django, Flask (Python), and Node.js, enabling the creation of robust and scalable web applications with efficient back-end functionalities.</li>
+          <li><span>Front-end Development:</span> Proficient in building captivating user interfaces using modern frameworks such as React, ensuring seamless and intuitive user experiences.</li>
+          <li><span>RESTful APIs: </span>Expertise in designing and implementing REST APIs, facilitating seamless communication between applications and enabling efficient data exchange.</li>
+          <li><span>Cloud Technologies:</span> Proficient in leveraging AWS services, including EC2, Lambda, S3, and more, for secure and scalable cloud-based solutions.</li>
+          <li><span>Containerization and Deployment: </span>Skilled in Docker, Kubernetes, and CI/CD pipelines (e.g., Jenkins, GitHub Actions), enabling streamlined deployment processes and efficient scalability.</li>
+          <li><span>Databases: </span>Experienced in working with various databases, including MySQL, SQLite, Firebase, MongoDB, enabling efficient data management and retrieval.</li>
+          <li><span>Test-Driven Development (TDD): </span>Practiced TDD methodologies, ensuring the creation of high-quality, robust, and maintainable code.</li>
+          <li><span>Agile Development: </span>Proficient in working within agile development environments, participating in sprints, conducting code reviews, and fostering collaboration.</li>
+          <li><span>Version Control: </span>Experienced in utilizing Git and GitHub for efficient version control and collaboration in software development projects.</li>     
+        </ul>
+      </div>
+      </p>
+    </div>
+    <div class="horizontal bar"></div>
+    <div class="portfolio-photo"></div>
+  </div>
+  </div>
+  <!-- Certifications-->
+  <div>
+    <div class="certifications" id="certifications-section">
+      <div class="certifications-title">
+        <div class="orange-line-title"></div>
+          <h3>CERTIFICATIONS</h3>
+        <div class="orange-line-title"></div>
+      </div>
+      <div class="certification-list">
+        <ul>
+          <li>
+            <span class="certification-name">AWS Certified Developer - Associate:</span> <br> I have successfully obtained the AWS Developer Associate Certificate, demonstrating my expertise in developing applications on the AWS platform. With a score of 938 out of 1000, I have proven my strong understanding and proficiency in AWS development practices. These certifications serve as a testament to my dedication and commitment to staying at the forefront of cloud computing technologies.
+          </li>
+          <div class="certificate-images">
+            <div class="certificate-left">
+              <img src="./media/images/awsBatch.png" alt="Description of the image">
+            </div>
+            <div class="certificate-right">
+              <div class="certificate-left">
+                <img src="./media/images/awsCertificate.png" alt="Description of the image">
+              </div>
+            </div>
+          </div>
+          <li>
+            <span class="certification-name">Hashicorp Certified Terraform - Associate:</span> <br> I have successfully obtained the Hashicorp Certified Terraform - Associate Certificate, highlighting my strong expertise in using Terraform for infrastructure as code (IAC) deployments. With an impressive score, I've showcased my deep understanding and skill in leveraging Terraform to automate cloud infrastructure across platforms. This certification underscores my commitment to mastering innovative technologies in infrastructure orchestration and solidifies my position as a leader in cloud infrastructure management.
+          </li>
+          <div class="certificate-images">
+            <div class="certificate-left">
+              <img src="./media/images/Terraform Certified.png" alt="Description of the image">
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Certifications Ends-->
+      <!-- TimeLines -->
+      <div class="timeline-content">
+        <div class="about-me-title">
+        <div class="orange-line-title"></div>
+        <h3 class="experience-section-title" id="experiences-section">EDUCATION AND EXPERIENCES</h3>
+        <div class="orange-line-title"></div>
+        </div>
+        <div class="timeline">
+          <div class="outer">
+            <div class="card-timeline">
+              <div class="info">
+                <h3 class="title">University of Southern California</h3>
+                <p class="timeline-date">MS in CS (Aug.2021-May 2023)</p>
+                <ul class="college-first-ul">
+                  <li>GPA: 3.82</li>
+                  <li>Courses Completed:
+                    <ul class="college-second-ul">
+                      <li>Analaysis of Algorithm</li>
+                      <li>Database Systems</li>
+                      <li>Applied Natural Language Processing</li>
+                      <li>Web Techologies</li>
+                      <li>Advanced Mobile Devices And Game Consoles</li>
+                      <li>Machine Learning for Data Science</li>
+                      <li>Information Retrieval and Web Search Engines</li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="card-timeline">
+              <div class="info">
+                <h3 class="title">Karyathalo IT and Web Solutions</h3>
+                <p class="timeline-date"> Software Engineer (August 2018-June 2021)</p>
+                <p class="experience-info">
+                As a software developer at Karyathalo IT and Web Solutions, I've excelled in implementing innovative logistics solutions for e-commerce and spearheading various projects. Collaborating with engineers, I've designed and developed REST APIs using Swagger, Java, Spring Boot, Spring Data JPA, and MySQL. Leveraging AWS and Google Maps APIs, I've deployed websites with efficient UI components. Proficient in Test-Driven Development, I've delivered high-quality backend services and optimized code performance. Skilled in React, Angular, and Docker, I've streamlined deployment processes, ensuring seamless user experiences.
+              </p>
+              </div>
+            </div>
+            <div class="card-timeline">
+              <div class="info">
+                <h3 class="title">Brand Builder Pvt. Ltd</h3>
+                <p class="timeline-date"> Software Engineer (Decmber. 2016- June. 2018)</p>
+                <p class="experience-info">
+                As a software developer at BrandBuilder Pvt. Ltd, I have been instrumental in driving continual improvement of existing modules through code refactoring and API optimization. Additionally, I showcased my leadership skills by successfully leading a team of five developers in delivering a revenue-boosting hotel booking web application. With my expertise and dedication, I consistently strive to enhance the functionality and performance of software solutions, ensuring optimal user experiences.
+              </p>
+              </div>
+            </div>
+            <div class="card-timeline">
+              <div class="info">
+                <h3 class="title">Advanced College of Engineering & Management</h3>
+                <p class="timeline-date"></p>
+                <ul class="college-first-ul">
+                  <li>Bachelor's in Computer Engineering</li>
+                  <li>GPA: 4.0/4.0</li>
+                  <li>Courses Completed:
+                    <ul class="college-second-ul">
+                      <li>Operating Systems</li>
+                      <li>Computer Network</li>
+                      <li>Data Structures and Algorithm</li>
+                      <li>Software Engineering</li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TIMELINE ENDS -->
+      <!-- ACADEMICS -->
+      <div class="academics-papers">
+        <div class="about-me-title">
+        <div class="orange-line-title"></div>
+        <h3 id="research-section" class="research-section-title">RESEARCH BASED PROJECTS</h3>
+        <div class="orange-line-title"></div>
+      </div>
+        <div class="papers-cards">
+          <div class="research-card">
+            <div class="research-info">
+              <h3 class="research-title">NER For Clinical Patient Notes</h3>
+              <p>
+                The project aims to build a neural network model that identifies and annotates specific concepts in English patient notes.
+                The approach is to extract the key information from the patient notes in the form of sequence labeling task where we predict
+                the entity boundary.
+              </p>
+              <span class="button-center">
+                <button onclick="window.open('./media/downloads/NERForClinicalNotes.pdf', '_blank')">See Details</button>
+            </span>
+            </div>
+          </div>
+          <div class="research-card">
+            <div class="research-info">
+              <h3 class="research-title">Vehicle Monitoring System using IOT</h3>
+              <p>
+                The project presents the use of RFID technology to
+                monitor the vehicle information. The system is an IoT based
+                android application for assistance on vehicle monitoring. The vehicle information is collected when it passes through RFID station and stored in Firebase.
+                These data than can be used by a user through an android application.
+              </p>
+              <span class="button-center">
+                <button onclick="window.open('https://www.irjet.net/archives/V6/i9/IRJET-V6I9172.pdf', '_blank')">See Details</button>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-section">
+        <div class="about-me-title">
+        <div class="orange-line-title"></div>
+        <h3 class="projects-title" id="project-section">PROJECTS</h3>
+        <div class="orange-line-title"></div>
+      </div>
+      <section class="project-box">
+        <div class="box">
+          <h3 data-jarallax-element="0 -200">Distributed Microservices <br> Archictecure in Spring Boot</h3>
+          <div class="container">
+            <div class="imgBx jarallax">
+              <img src="./media/images/ServiceRegitry.png" class="jarallax-img" />
+            </div>
+            <div class="content" data-jarallax-element="-200 0">
+              <p class="experience-info">
+                This exciting project showcases the implementation of a highly scalable microservices architecture using Spring Boot. It leverages cutting-edge technologies like Jaeger, micrometer, Docker, and Kubernetes to achieve real-time monitoring, fault tolerance, and streamlined deployment through a CI/CD pipeline with GitHub Actions. The project demonstrates the innovative use of these technologies to create a robust and efficient microservices architecture.
+              </p>
+              <div class="technology-used">
+                <div class="technology-used-top">
+                <div class="name-and-logo">
+                <img src="./media/icons/spring-boot.png" alt="technology-image" class="technology-image"><p>Spring Boot</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/docker.png" alt="technology-image" class="technology-image"><p>Docker</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/kubernetes.png" alt="technology-image" class="technology-image"><p>Kubernetes</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/mysql.png" alt="technology-image" class="technology-image"><p>MySQL</p>
+              </div>
+            </div>
+            <div class="technology-used-bottom">
+              <div class="name-and-logo">
+                <img src="./media/icons/resilience4j.png" alt="technology-image" class="technology-image"><p>Resiliance4j</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/github-actions.png" alt="technology-image" class="technology-image"><p>Github Actions</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/jaeger.png" alt="technology-image" class="technology-image"><p>Jaeger</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/eureka.png" alt="technology-image" class="technology-image"><p>Eureka Service Registry</p>
+              </div>
+            </div>
+              </div>
+              <div class="more-options">
+                <button onclick="window.open('https://github.com/prakash472/SpringBootMicroServices', '_blank')">View Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-box">
+        <div class="box">
+          <h3 data-jarallax-element="0 -200">Github Productivity</h3>
+          <div class="container">
+            <div class="imgBx jarallax">
+              <img src="./media/images/github-project.png" class="jarallax-img" />
+            </div>
+            <div class="content" data-jarallax-element="-200 0">
+              <p class="experience-info">
+                Introducing the Developer Productivity project, which collects GitHub data, calculates productivity scores, and generates reports for teams and individual contributors. Utilizing Flask and React frameworks, along with Docker containerization, this initiative offers an efficient solution for tracking and analyzing developer productivity. 
+              </p>
+              <div class="technology-used">
+                <div class="name-and-logo">
+                <img src="./media/icons/flask.png" alt="technology-image" class="technology-image"><p>Flask</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/react.png" alt="technology-image" class="technology-image"><p>React</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/docker.png" alt="technology-image" class="technology-image"><p>Docker</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/tailwind.png" alt="technology-image" class="technology-image"><p>Tailwind-CSS</p>
+              </div>
+              </div>
+              <div class="more-options">
+                <button onclick="window.open('https://github.com/prakash472/github-productivity', '_blank')">View Code</button>
+                <button onclick="window.open('https://www.youtube.com/watch?v=Gm2ONpWhJ_o', '_blank')">View Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="project-box">
+          <div class="box">
+            <h3 data-jarallax-element="0 -200">Stock Information And Visualizer</h3>
+            <div class="container">
+              <div class="imgBx jarallax">
+                <img src="./media/images/stockInformationVisualizer.png" class="jarallax-img" />
+              </div>
+              <div class="content" data-jarallax-element="-200 0">
+                <p>
+                  Step into the exciting world of stock trading with our fully responsive web app. Experience the thrill of the market as you engage in paper trading, buying and selling stocks without real financial risk. Stay ahead of the game with real-time stock price updates, track your portfolio, and gain valuable insights with visually stunning charts showcasing stock performance. Get ready to dive into the world of stocks and unleash your trading potential.
+                </p>
+                <div class="technology-used">
+                  <div class="name-and-logo">
+                  <img src="./media/icons/angular.svg" alt="technology-image" class="technology-image"><p>Angular</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/node.png" alt="technology-image" class="technology-image"><p>Node</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/express.svg" alt="technology-image" class="technology-image"><p>Express</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/bootstrap.svg" alt="technology-image" class="technology-image"><p>Bootstrap</p>
+                </div>
+                </div>
+                <div class="more-options">
+                  <button onclick="window.open('https://webtech-9472.wl.r.appspot.com', '_blank')">View Website</button>
+                  <button onclick="window.open('https://youtu.be/kTHZgEufIg0', '_blank')">View Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="box">
+            <!-- <h2 class="lax lax_preset_slideX:300:-200"> -->
+            <h3 data-jarallax-element="0 200">Stock Trading App</h3>
+            <div class="container">
+              <div class="imgBx jarallax">
+                <img src="./media/images/stockTradingApp.png" class="jarallax-img" />
+              </div>
+              <div class="content" data-jarallax-element="-200 0">
+                <p>
+                  Embark on your trading journey with our innovative Android app. Experience the excitement of paper trading, where you can buy and sell stocks without any financial risk. Stay informed with real-time stock price updates, manage your portfolio, and gain valuable insights through dynamic charts that bring stock performance to life. Get ready to dive into the world of trading and unleash your potential with our feature-packed app.
+                </p>
+                <div class="technology-used">
+                  <div class="name-and-logo">
+                  <img src="./media/icons/android.png" alt="technology-image" class="technology-image"><p>Android</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/node.png" alt="technology-image" class="technology-image"><p>Node</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/express.svg" alt="technology-image" class="technology-image"><p>Express</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/kotlin.jpeg" alt="technology-image" class="technology-image"><p>Kotlin</p>
+                </div>
+                </div>
+                <div class="more-options">
+                  <button onclick="window.open('https://youtu.be/IduTWRl4OBQ', '_blank')">View Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="box">
+            <!-- <h2 class="lax lax_preset_slideX:300:-200"> -->
+            <h3 data-jarallax-element="0 200">Word Attack</h3>
+            <div class="container">
+              <div class="imgBx jarallax">
+                <img src="./media/images/wordAttack.png" class="jarallax-img" />
+              </div>
+              <div class="content" data-jarallax-element="-200 0">
+                <p>
+                  Immerse yourself in a captivating gaming experience where letters rain from the sky, waiting to be 
+                  collected by your sharp shooting skills. But be on high alert! Dodging treacherous rocks and relentless enemies adds 
+                  an exhilarating twist. Your health is at stake, so precise aim is crucial. As you gather the letters, a hidden word materializes, 
+                  challenging your intellect and strategic prowess. With each level, the game intensifies, pushing your shooting accuracy and mental acuity to their limits. 
+                </p>
+                <div class="technology-used">
+                  <div class="name-and-logo">
+                  <img src="./media/icons/cSharp.png" alt="technology-image" class="technology-image"><p>C#</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/unity.png" alt="technology-image" class="technology-image"><p>Unity</p>
+                </div>
+                </div>
+                <div class="more-options">
+                  <button onclick="window.open('https://play.unity.com/mg/other/gamebuildfinal', '_blank')">Play Game</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="box">
+            <h3 data-jarallax-element="0 -200">Song Genre Prediction</h3>
+            <div class="container">
+              <div class="imgBx jarallax">
+                <img src="./media/images/ThumbnailMusicPrediction.JPG" class="jarallax-img" />
+              </div>
+              <div class="content" data-jarallax-element="-200 0">
+                <p>
+                  Experience a project that combines the realms of deep learning and web development. Witness the seamless integration as the backend, powered by a Convolutional Neural Network, predicts music based on user input, while the frontend transforms these predictions into mesmerizing visual representations. With an impressive accuracy of 92%, indulge in a unique and immersive musical experience crafted solely by your ingenuity.
+                </p>
+                <div class="technology-used">
+                  <div class="name-and-logo">
+                  <img src="./media/icons/react.png" alt="technology-image" class="technology-image"><p>React</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/flask.png" alt="technology-image" class="technology-image"><p>Flask</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/keras.png" alt="technology-image" class="technology-image"><p>Keras</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/librosa.png" alt="technology-image" class="technology-image"><p>librosa</p>
+                </div>
+                </div>
+                <div class="more-options">
+                  <button onclick="window.open('https://github.com/prakash472/MusicGenrePrediction', '_blank')">View Code</button>
+                  <button onclick="window.open('https://youtu.be/N96kfKnwtAA', '_blank')">View Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="mobile-screen" id="project-section-mobile">
+        <h3 class="projects-title" id="project-section-mobile">PROJECTS</h3>
+        <!-- <section class="project-item">
+          <h3>Distributed Microservices Archictecure in Spring Boot</h3>
+          <div class="content">
+            <p>
+              This exciting project showcases the implementation of a highly scalable microservices architecture using Spring Boot. It leverages cutting-edge technologies like Jaeger, micrometer, Docker, and Kubernetes to achieve real-time monitoring, fault tolerance, and streamlined deployment through a CI/CD pipeline with GitHub Actions. The project demonstrates the innovative use of these technologies to create a robust and efficient microservices architecture.
+            </p>
+            <div class="technology-used">
+              <div class="name-and-logo">
+              <img src="./media/icons/spring-boot.png" alt="technology-image" class="technology-image"><p>Spring Boot</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/docker.png" alt="technology-image" class="technology-image"><p>Docker</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/kubernetes.png" alt="technology-image" class="technology-image"><p>Kubernetes</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/github-actions.png" alt="technology-image" class="technology-image"><p>Github Actions</p>
+            </div>
+            </div>
+            <div class="more-options">
+              <button onclick="window.open('https://github.com/prakash472/SpringBootMicroServices', '_blank')">View Website</button>
+            </div>
+          </div>
+        </section> -->
+        <section class="project-item">
+          <h3>Distributed Microservices <br> Archictecure in Spring Boot</h3>
+          <div class="content">
+            <p>
+              This exciting project showcases the implementation of a highly scalable microservices architecture using Spring Boot. It leverages cutting-edge technologies like Jaeger, micrometer, Docker, and Kubernetes to achieve real-time monitoring, fault tolerance, and streamlined deployment through a CI/CD pipeline with GitHub Actions. The project demonstrates the innovative use of these technologies to create a robust and efficient microservices architecture.
+            </p>
+            <div class="technology-used">
+              <div class="name-and-logo">
+              <img src="./media/icons/spring-boot.png" alt="technology-image" class="technology-image"><p>Spring Boot</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/docker.png" alt="technology-image" class="technology-image"><p>Docker</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/kubernetes.png" alt="technology-image" class="technology-image"><p>Kubernetes</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/github-actions.png" alt="technology-image" class="technology-image"><p>Github Actions</p>
+            </div>
+            </div>
+            <div class="more-options">
+              <button onclick="window.open('https://github.com/prakash472/SpringBootMicroServices', '_blank')">View Website</button>
+            </div>
+          </div>
+        </section>
+        <section class="project-item">
+          <h3>Github Productivity</h3>
+          <div class="content">
+            <p>
+              Introducing the Developer Productivity project, which collects GitHub data, calculates productivity scores, and generates reports for teams and individual contributors. Utilizing Flask and React frameworks, along with Docker containerization, this initiative offers an efficient solution for tracking and analyzing developer productivity.
+            </p>
+            <div class="technology-used">
+                <div class="name-and-logo">
+                <img src="./media/icons/flask.png" alt="technology-image" class="technology-image"><p>Flask</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/react.png" alt="technology-image" class="technology-image"><p>React</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/docker.png" alt="technology-image" class="technology-image"><p>Docker</p>
+              </div>
+              <div class="name-and-logo">
+                <img src="./media/icons/tailwind.png" alt="technology-image" class="technology-image"><p>Tailwind-CSS</p>
+              </div>
+            </div>
+            <div class="more-options">
+                <button onclick="window.open('https://github.com/prakash472/github-productivity', '_blank')">View Code</button>
+                <button onclick="window.open('https://www.youtube.com/watch?v=Gm2ONpWhJ_o', '_blank')">View Demo</button>
+              </div>
+          </div>
+        </section>
+        <section class="project-item">
+          <h3>Stock Information And Visualizer</h3>
+          <div class="content">
+            <p>
+              Step into the exciting world of stock trading with our fully responsive web app. Experience the thrill of the market as you engage in paper trading, buying and selling stocks without real financial risk. Stay ahead of the game with real-time stock price updates, track your portfolio, and gain valuable insights with visually stunning charts showcasing stock performance. Get ready to dive into the world of stocks and unleash your trading potential.
+            </p>
+            <div class="technology-used">
+              <div class="name-and-logo">
+              <img src="./media/icons/angular.svg" alt="technology-image" class="technology-image"><p>Angular</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/node.png" alt="technology-image" class="technology-image"><p>Node</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/express.svg" alt="technology-image" class="technology-image"><p>Express</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/bootstrap.svg" alt="technology-image" class="technology-image"><p>Bootstrap</p>
+            </div>
+            </div>
+            <div class="more-options">
+              <button onclick="window.open('https://webtech-9472.wl.r.appspot.com', '_blank')">View Website</button>
+              <button onclick="window.open('https://youtu.be/kTHZgEufIg0', '_blank')">View Demo</button>
+            </div>
+          </div>
+        </section>
+        <section class="project-item">
+          <h3>Stock Trading App</h3>
+          <div class="content">
+            <p>
+              Embark on your trading journey with our innovative Android app. Experience the excitement of paper trading, where you can buy and sell stocks without any financial risk. Stay informed with real-time stock price updates, manage your portfolio, and gain valuable insights through dynamic charts that bring stock performance to life. Get ready to dive into the world of trading and unleash your potential with our feature-packed app.
+            </p>
+            <div class="technology-used">
+              <div class="name-and-logo">
+              <img src="./media/icons/android.png" alt="technology-image" class="technology-image"><p>Android</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/node.png" alt="technology-image" class="technology-image"><p>Node</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/express.svg" alt="technology-image" class="technology-image"><p>Express</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/kotlin.jpeg" alt="technology-image" class="technology-image"><p>Kotlin</p>
+            </div>
+            </div>
+            <div class="more-options">
+              <button onclick="window.open('https://youtu.be/IduTWRl4OBQ', '_blank')">View Demo</button>
+            </div>
+          </div>
+        </section>
+        <section class="project-item">
+          <h3>Word Attack</h3>
+          <div class="content">
+            <p>
+              Immerse yourself in a captivating gaming experience where letters rain from the sky, waiting to be 
+                  collected by your sharp shooting skills. But be on high alert! Dodging treacherous rocks and relentless enemies adds 
+                  an exhilarating twist. Your health is at stake, so precise aim is crucial. As you gather the letters, a hidden word materializes, 
+                  challenging your intellect and strategic prowess. With each level, the game intensifies, pushing your shooting accuracy and mental acuity to their limits. 
+            </p>
+            <div class="technology-used">
+                  <div class="name-and-logo">
+                  <img src="./media/icons/cSharp.png" alt="technology-image" class="technology-image"><p>C#</p>
+                </div>
+                <div class="name-and-logo">
+                  <img src="./media/icons/unity.png" alt="technology-image" class="technology-image"><p>Unity</p>
+                </div>
+                </div>
+                <div class="more-options">
+                  <button onclick="window.open('https://play.unity.com/mg/other/gamebuildfinal', '_blank')">Play Game</button>
+                </div>
+          </div>
+        </section>
+        <section class="project-item">
+          <h3>Song Genre Prediction</h3>
+          <div class="content">
+            <p>
+              xperience a project that combines the realms of deep learning and web development. Witness the seamless integration as the backend, powered by a Convolutional Neural Network, predicts music based on user input, while the frontend transforms these predictions into mesmerizing visual representations. With an impressive accuracy of 92%, indulge in a unique and immersive musical experience crafted solely by your ingenuity.
+        </p>
+            <div class="technology-used">
+              <div class="name-and-logo">
+              <img src="./media/icons/react.png" alt="technology-image" class="technology-image"><p>React</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/flask.png" alt="technology-image" class="technology-image"><p>Flask</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/keras.png" alt="technology-image" class="technology-image"><p>Keras</p>
+            </div>
+            <div class="name-and-logo">
+              <img src="./media/icons/librosa.png" alt="technology-image" class="technology-image"><p>librosa</p>
+            </div>
+            </div>
+            <div class="more-options">
+              <button onclick="window.open('https://github.com/prakash472/MusicGenrePrediction', '_blank')">View Code</button>
+              <button onclick="window.open('https://youtu.be/N96kfKnwtAA', '_blank')">View Demo</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="more-projects-div" id="more-projects-div">
+      <button class="more-projects-button" onclick="showMoreProjects()" id="more-projects-button">See More Projects</button>
+    </div>
+    <main id="cards">
+      <section class="cards"> 
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Genetic Sequence Algorithm
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">The project find the genetic sequence alignmnet in both memory-effecient approach and space-effecient apporach.</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Dynamic Programming</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/Genetic-Sequence-Algorithm/tree/main', '_blank')">View Code</button>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Naive Baye's Algorithm
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">Here we implemented the Naive Baye's classifier from scratch to identify the hotel's review.We classify the reviews as either truthful or deceptive or either positive or negative </p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Natural Language</li>
+                <li>Python</li>
+                <li>Accuracy: 91%</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/NaiveBaye-s-Classifier', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Simple Static Website
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">The project demonstartes a simple static website. The website will act as a template according to the user which can be modified according to the users need.</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javascript</li>
+              </ul>
+              <p class="static-site-info">* Since it's a static website, the resolution should be adjusted accordingly.</p>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://prakash472.github.io/webtech-assignments/assignment3472/index472.html','_blank')">View Website</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Hidden Markov Model
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">The project is builts a Hidden Markov Model (including Viterbi Decoding) part-of-speech tagger for Italian, Japanese, and a test language. The training data are provided tokenized and tagged; the test data will be provided tokenized, and the tagger will add the tags. The performance on the model is based on the performance of your tagger. The test language is English</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Natural Language Processing</li>
+                <li>Python</li>
+                <li>Accuracy: 91%</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/HiddenMarkovModel','_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Cipher Text Detection
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">The project highlights a simple scenario for privacy-preserving Natural Language Understanding.The aim is to develope a text classification model based on ciphertext. The project uses TF-IDF to vectorize the cipher text and later uses the Support Vector Machines to binary classify the given cipher text input.</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Natural Language Processing</li>
+                <li>Python</li>
+                <li>Accuracy: 90.33%</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/CipherTextDetection','_blank')">View Code</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Precondition Inference
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">
+                The goal of the project is to build a natural language reasoner to decide whether the precondition will enable or disable the statement.The input consists of sentence pairs.
+                . For each pair of sentence, the first one is considered as a precondition, while the second one is a statement.
+                For example: given the statement "A glass can be used to drink water", then the precondition "water is clean" enables this statement, while the precondition "the glass is completely broken" disables this statement.</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Natural Language Processing</li>
+                <li>Python</li>
+                <li>Accuracy: 89.33%</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/Precondition-Inference','_blank')">View Code</button>
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="more-projects-title">
+            <p class="card__title text--medium">
+              Blog Post Analyser
+            </p>
+          </div>
+            <div class="card__info">
+              <p class="text--medium">The webapp allows the user to write and view other person's blog. The feature of this application is it analyses the blog post written by the user and allows them to filter the blog post. The post analyser is done after fine-tuning the pre-trained BERT model on the IMDB dataset. Further the frontend is build with the help of React along with ANT-Design. The additional feature of JWT authentication is also added for authentication.</p>
+            </div>
+            <div class="highlights-more-projects">
+              <ul>
+                <li>Web App (Machine Learning)</li>
+                <li>Django, React, Keras</li>
+              </ul>
+            </div>
+            <div class="more-project-button-div">
+              <button class="more-projects-view-code-button" onclick="window.open('https://github.com/prakash472/BlogWithPostAnalysis','_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="less-projects-div" id="less-projects-div">
+      <button class="less-projects-button" onclick="showLessProjects()" id="less-projects-button">See Less Projects</button>
+    </div>
+      <div
+        class="orange-line"
+        style="background-color: orangered; width: 100%; height: 2px"
+      ></div>
+      <div class="footer">
+        <h4>prakashparajuli472@gmail.com</h4>
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Prakash Parajuli All Rights Reserved
+        </p>
+      </div>
+      <div class="social-handles">
+        <a href="https://www.linkedin.com/in/prakash472" target="blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/prakash472/" target="blank"><i class="fa fa-github fa-lg"></i></a>
+        <a href="mailto: prakashparajuli472@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      jarallax(document.querySelectorAll(".jarallax"), {
+        speed: 0.5,
+      });
+    </script>
+  </body>
+</html>
